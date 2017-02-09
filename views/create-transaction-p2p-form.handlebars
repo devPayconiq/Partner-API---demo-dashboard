@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>Create Client -> Client Transaction</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <form action="/create-transaction-p2p.html" method="post">
+            <h2>Transaction Required Fields</h2>
+            <div class="form-group">
+                <label for="originId">Sender ID (originId)</label>
+                <input name="originId" class="form-control" id="originId" aria-describedby="originId"
+                       value="">
+            </div>
+            <div class="form-group">
+                <label for="originIBAN">Sender IBAN (originIBAN)</label>
+                <input name="originIBAN" class="form-control" id="originIBAN" aria-describedby="originIBAN"
+                       value="">
+            </div>
+            <div class="form-group">
+                <label for="targetId">Reciver ID (targetId)</label>
+                <input name="targetId" class="form-control" id="targetId" aria-describedby="targetId"
+                       value="">
+            </div>
+            <div class="form-group">
+                <label for="targetIBAN">Reciver IBAN (targetIBAN)</label>
+                <input name="targetIBAN" class="form-control" id="targetIBAN" aria-describedby="targetIBAN"
+                       value="">
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input name="amount" class="form-control" id="amount" aria-describedby="amount"
+                       value="">
+            </div>
+            <div class="form-group">
+                <label for="currency">Currency</label>
+                <input name="currency" class="form-control" id="currency" aria-describedby="currency"
+                       value="EUR">
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    </div>
+</div>

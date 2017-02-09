@@ -1,0 +1,16 @@
+.main-menu {
+    background-color: #3EC7CE;
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar-nav > li > a {
+    color: white !important;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #2aabd2 !important;
+}

@@ -1,0 +1,65 @@
+<div class="row">
+    <div class="col-md-12">
+
+
+        <div class="container">
+            <h2>Transaction History Filter</h2>
+
+            <p>{{transactions}}</p>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                    <th>Show Details</th>
+                    <th>Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each clients}}
+                    <tr>
+                        <td>ID</td>
+                        <td>{{_id}}</td>
+                        <td>
+                            <button type="button" class="btn btn-info">More details..</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>First Name</td>
+                        <td>{{firstName}}</td>
+                    </tr>
+
+                    {{#each bankAccounts}}
+                        <tr>
+                            <td>IBAN</td>
+                            <td>{{IBAN}}</td>
+                        </tr>
+                        <tr>
+                            <td>Mandate Reference</td>
+                            <td>{{mandateReference}}</td>
+                        </tr>
+                    {{/each}}
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                {{/each}}
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+</div>

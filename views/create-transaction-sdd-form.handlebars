@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>Create Client -> Partner Transaction</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <form action="/create-transaction-SDD.html" method="post">
+            <h2>Transaction Required Fields</h2>
+            <div class="form-group">
+                <label for="originId">Sender ID (originId)</label>
+                <input name="originId" class="form-control" id="originId" aria-describedby="originId"
+                       value="">
+            </div>
+            <div class="form-group">
+                <label for="originIBAN">Sender IBAN (originIBAN)</label>
+                <input name="originIBAN" class="form-control" id="originIBAN" aria-describedby="originIBAN"
+                       value="">
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input name="amount" class="form-control" id="amount" aria-describedby="amount"
+                       value="">
+            </div>
+            <div class="form-group">
+                <label for="currency">Currency</label>
+                <input name="currency" class="form-control" id="currency" aria-describedby="currency"
+                       value="EUR">
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    </div>
+</div>

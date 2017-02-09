@@ -1,0 +1,12 @@
+{
+  "app": {
+    "name": "partner-api-example",
+    "version": "0.0.1"
+  },
+  "log": {
+    "level": "debug",
+    "directory": "./logs/",
+    "filename": "partner-api-example.log"
+  }
+
+}

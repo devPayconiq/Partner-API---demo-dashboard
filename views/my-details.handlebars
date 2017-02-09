@@ -1,0 +1,211 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>Partner Info</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <p>
+            Partner ID :
+        </p>
+        <p id="partnerId">{{partnerId}}</p>
+    </div>
+    <div class="col-md-6">
+        <p>
+            Key
+        </p>
+        <p id="key">{{partnerKey}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p id="details">{{partnersDetails.bankAccounts.name}} </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="container">
+            <h2>More details</h2>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>ID</td>
+                    <td>{{partnersDetails._id}}</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>{{partnersDetails.firstName}}</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>{{partnersDetails.lastName}}</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>{{partnersDetails.phone}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                {{#each partnersDetails.bankAccounts}}
+                    <tr>
+                        <td>Name</td>
+                        <td>{{name}}</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>{{status}}</td>
+                        <td>
+                            <button type="button" class="btn btn-info">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>transferType</td>
+                        <td>{{transferType}}</td>
+                        <td>
+                            <button type="button" class="btn btn-info">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IBAN</td>
+                        <td>{{IBAN}}</td>
+                        <td>
+                            <button type="button" class="btn btn-info">Edit</button>
+                        </td>
+                    </tr>
+                {{/each}}
+                <tr>
+                    <td>creationDate</td>
+                    <td>{{partnersDetails.creationDate}}</td>
+                </tr>
+                <tr>
+                    <td>companyName</td>
+                    <td>{{partnersDetails.companyName}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>{{partnersDetails.type}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>no</td>
+                    <td>{{partnersDetails.address.no}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>street</td>
+                    <td>{{partnersDetails.address.street}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>postalCode</td>
+                    <td>{{partnersDetails.address.postalCode}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>city</td>
+                    <td>{{partnersDetails.address.city}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>country</td>
+                    <td>{{partnersDetails.address.country}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>enableMandateManagement</td>
+                    <td>{{partnersDetails.setting.enableMandateManagement}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>enableAutomaticRetry</td>
+                    <td>{{partnersDetails.setting.enableAutomaticRetry}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>enableAutomaticSMSMandateSignCode</td>
+                    <td>{{partnersDetails.setting.enableAutomaticSMSMandateSignCode}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>enableCheckMandateSignCode</td>
+                    <td>{{partnersDetails.setting.enableCheckMandateSignCode}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p2p</td>
+                    <td>{{partnersDetails.setting.p2p}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p2pType</td>
+                    <td>{{partnersDetails.setting.p2pType}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>enableSCTConditional</td>
+                    <td>{{partnersDetails.setting.enableSCTConditional}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>enableSCTPayout</td>
+                    <td>{{partnersDetails.setting.enableSCTPayout}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>enableRiskChecks</td>
+                    <td>{{partnersDetails.setting.enableRiskChecks}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>beneficiaryName</td>
+                    <td>{{partnersDetails.beneficiaryName}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info">Edit</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="container">
+            <h2>Transaction history</h2>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                    <th>Show Details</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each transactions}}
+                    <tr>
+                        <td>Sender ID</td>
+                        <td>{{originId}}</td>
+                        <td>
+                            <button type="button" class="btn btn-info">More details..</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sender Name</td>
+                        <td>{{originUser.firstName}}</td>
+                    </tr>
+                    <tr>
+                        <td>Sender IBAN</td>
+                        <td>{{originIBAN}}</td>
+                    </tr>
+                    <tr>
+                        <td>Amount</td>
+                        <td>{{amount}}</td>
+                    </tr>
+                    <tr>
+                        <td>Reciver ID</td>
+                        <td>{{targetUser._id}}</td>
+                        <td>
+                            <button type="button" class="btn btn-info">More details..</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Reciver Name</td>
+                        <td>{{originUser.firstName}}</td>
+                    </tr>
+                    <tr>
+                        <td>Sender IBAN</td>
+                        <td>{{targetIBAN}}</td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

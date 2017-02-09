@@ -1,0 +1,14 @@
+{
+  "app": {
+    "name": "partner-api-example",
+    "version": "0.0.1",
+    "port": 3000
+  },
+  "log": {
+    "level": "debug",
+    "directory": "./logs/",
+    "filename": "online-payments"
+  },
+  "partnerId": "589b0ebb6eb9ed0001b706e9",
+  "partnerKey": "c0bf3a8d-3fd5-4ad8-96de-be88b6aee6e6"
+}

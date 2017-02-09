@@ -1,0 +1,122 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>Transactions Details</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>ID</td>
+                    <td>{{transactionDetails._id}}</td>
+                </tr>
+                <tr>
+                    <td>originId</td>
+                    <td>{{transactionDetails.originId}}</td>
+                </tr>
+                <tr>
+                    <td>targetIBAN</td>
+                    <td>{{transactionDetails.originIBAN}}</td>
+                </tr>
+                <tr>
+                    <td>targetId</td>
+                    <td>{{transactionDetails.targetId}}</td>
+                </tr>
+                <tr>
+                    <td>amount</td>
+                    <td>{{transactionDetails.amount}}</td>
+                </tr>
+                <tr>
+                    <td>currency</td>
+                    <td>{{transactionDetails.currency}}</td>
+                </tr>
+                <h2>Sender Details</h2>
+                <tr>
+                    <td>_id</td>
+                    <td>{{transactionDetails.originUser._id}}</td>
+                </tr>
+                <tr>
+                    <td>currency</td>
+                    <td>{{transactionDetails.originUser.firstName}}</td>
+                </tr>
+                <tr>
+                    <td>currency</td>
+                    <td>{{transactionDetails.originUser.lastName}}</td>
+                </tr>
+                <tr>
+                    <td>phone</td>
+                    <td>{{transactionDetails.originUser.phone}}</td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>{{transactionDetails.originUser.email}}</td>
+                </tr>
+                <h2>Reciver Details</h2>
+                <tr>
+                    <td>_id</td>
+                    <td>{{transactionDetails.targetUser._id}}</td>
+                </tr>
+                <tr>
+                    <td>currency</td>
+                    <td>{{transactionDetails.targetUser.firstName}}</td>
+                </tr>
+                <tr>
+                    <td>currency</td>
+                    <td>{{transactionDetails.targetUser.lastName}}</td>
+                </tr>
+                <tr>
+                    <td>phone</td>
+                    <td>{{transactionDetails.targetUser.phone}}</td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>{{transactionDetails.targetUser.email}}</td>
+                </tr>
+                <tr>
+                    <td>creationDate</td>
+                    <td>{{transactionDetails.targetUser.creationDate}}</td>
+                </tr>
+                <tr>
+                    <td>companyName</td>
+                    <td>{{transactionDetails.targetUser.companyName}}</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>{{transactionDetails.targetUser.type}}</td>
+                </tr>
+                <h2>Transaction info</h2>
+
+                <tr>
+                    <td>creationDate</td>
+                    <td>{{transactionDetails.creationDate}}</td>
+                </tr>
+                <tr>
+                    <td>status</td>
+                    <td>{{transactionDetails.status}}</td>
+                </tr>
+                <tr>
+                    <td>sddStatus</td>
+                    <td>{{transactionDetails.sddStatus}}</td>
+                </tr>
+                <tr>
+                    <td>sctStatus</td>
+                    <td>{{transactionDetails.sctStatus}}</td>
+                </tr>
+                <tr>
+                    <td>transferType</td>
+                    <td>{{transactionDetails.transferType}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
